@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Roboto&display=swap');
+
+* {
+    background: #323236;
+}
+
+.year {
+    max-width: 1400px;
+    max-height: 900px;
+    margin: auto;
+}
+
+
+.titleYear {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px;
+
+    margin-bottom: 20px;
+
+}
+
+.btn {
+    background: slategrey;
+}
+
+.back,
+.forward {
+    /* font-family: 'Roboto', sans-serif;
+    margin: auto;
+    width: 130px;
+    height: 120px;
+    font-size: 100px;
+    text-align: center;
+    cursor: pointer;
+    color: slategrey;
+    border-radius: 50%; */
+
+    margin: auto;
+    text-align: center;
+    font-size: 90px;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.back:hover {
+    color: red;
+    /*border: 1px solid #4ca6ff;*/
+}
+
+.forward:hover {
+    color: red;
+    /*border: 1px solid #4ca6ff;*/
+}
+
+.numYear {
+    margin: auto;
+    text-align: center;
+    font-size: 90px;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+
+.numYearDiv {
+    max-height: 100px;
+    margin: auto;
+    text-align: center;
+    font-size: 90px;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+.numYear:hover {
+    color: #4ca6ff;
+}
+
+.progressYear {
+    background: #404040;
+    border-radius: 7px;
+    border: 1px solid #323236;
+    text-align: center;
+}
+
+.progressYearValue {
+    background: slategrey;
+    border-radius: 7px;
+    /*max-width: 5%;*/
+    width: 5%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+}
+
+.month1 *,
+.month2 *,
+.month3 *,
+.month4 *,
+.month5 *,
+.month6 *,
+.month7 *,
+.month8 *,
+.month9 *,
+.month10 *,
+.month11 *,
+.month12 * {
+    border-radius: 4px;
+    /*background: whitesmoke;*/
+    /*border: 2px solid peru;*/
+    border: 2px solid #323236;
+    /* margin-bottom: 100px;  */
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Comic Neue', cursive;
+    font-size: 24px;
+    color: whitesmoke;
+    background: #323236;
+    user-select: none;
+}
+
+
+.allMon {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+
+.mon {
+    display: grid;
+    grid-template-rows: 30px auto;
+    border: 1px solid dimgrey;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.mon:hover {
+    border: 1px solid #4ca6ff;
+    color: #4ca6ff;
+}
+
+.nameMonth {
+    text-align: center;
+    margin: auto;
+    color: #8c8c8e;
+    user-select: none;
+}
+
+.nameMonth:hover {
+    color: #4ca6ff;
+}
+
+
+h4 {
+    font-weight: 900;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.month1,
+.month2,
+.month3,
+.month4,
+.month5,
+.month6,
+.month7,
+.month8,
+.month9,
+.month10,
+.month11,
+.month12 {
+    display: grid;
+
+    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px;
+    grid-template-columns: 30px 30px 30px 30px 30px 30px;
+
+    grid-column-gap: 4px;
+    grid-row-gap: 2px;
+
+    grid-auto-flow: column;
+    margin: auto;
+}
+
+
+#d6,
+#d7,
+#d13,
+#d14,
+#d20,
+#d21,
+#d27,
+#d28,
+#d34,
+#d35,
+#d41,
+#d42 {
+    /* color: red; */
+    color: #BB0218;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 1399px) {
+
+    /** {*/
+    /*    margin: auto;*/
+    /*}*/
+    .allMon {
+        grid-template-columns: repeat(auto-fit, minmax(214px, 1fr));
+    }
+
+    .mon {
+        margin: auto;
+    }
+
+    .titleYear {
+        grid-template-columns: repeat(auto-fit, minmax(14px, 1fr));
+        grid-template-rows: 55px;
+    }
+
+
+
+    .numYear {
+        margin: auto;
+        text-align: center;
+        font-size: 34px;
+        color: whitesmoke;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .progressYear {
+        background: #404040;
+        border-radius: 7px;
+        border: 1px solid #323236;
+        text-align: center;
+    }
+
+    .progressYearValue {
+        background: slategrey;
+        border-radius: 7px;
+        /*max-width: 5%;*/
+        width: 5%;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+    }
+
+    /*.numYear {*/
+    /*    margin: auto;*/
+    /*    text-align: center;*/
+    /*    font-size: 90px;*/
+    /*    color: whitesmoke;*/
+    /*    font-family: 'Roboto', sans-serif;*/
+    /*}*/
+    /*.numYearDiv {*/
+    /*    max-height: 100px;*/
+    /*    margin: auto;*/
+    /*    text-align: center;*/
+    /*    font-size: 90px;*/
+    /*    color: whitesmoke;*/
+    /*    font-family: 'Roboto', sans-serif;*/
+    /*}*/
+    .back,
+    .forward {
+        font-family: 'Roboto', sans-serif;
+        margin: auto;
+        font-size: 35px;
+        text-align: center;
+        cursor: pointer;
+        color: slategrey;
+        border-radius: 50%;
+
+    }
+}
